@@ -43,6 +43,18 @@ function cities(){
         //add the row's html string to the table
         $("table").append(rowHtml);
     };
+    //Added at Example 3.5 line 44...
+    //get the div id
+    var theid = $('#mydiv').attr('id');
+
+    //theid is 'mydiv'; add it as text to the div
+    $('#mydiv').append(theid);
+
+    //add the class 'foo' to the div
+    $('#mydiv').attr('class', 'foo');
+
+    //Check your work with the Inspector!
+
 };
 
 //call the initialize function when the document has loaded
