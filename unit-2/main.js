@@ -72,12 +72,9 @@ function cities(){
             tr.appendChild(city);
 
             var pop = document.createElement("td");
-        //second conditional block        
-            if (cityPop[i].population < 500000){
-                pop.innerHTML = cityPop[i].population;
-            } else {
-                pop.innerHTML = 'Too big!';
-            };
+            
+        pop.innerHTML = cityPop[i].population < 500000 ? cityPop[i].population : 'Too big!';
+
 
         tr.appendChild(pop);
         table.appendChild(tr);
