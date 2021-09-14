@@ -86,5 +86,7 @@ function cities(){
     mydiv.appendChild(table);
 };
 
+$('#mydiv').html('Hello World');
+
 //call the initialize function when the window has loaded
 window.onload = initialize();
