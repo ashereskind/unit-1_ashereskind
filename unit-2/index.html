@@ -29,8 +29,12 @@
         
         <!--put your initial page content here-->
         
-        var mydiv = document.getElementById("mydiv");
-        mydiv.innerHTML = "Hello World";
+        function myfunc(){
+            var mydiv = document.getElementById("mydiv");
+            mydiv.innerHTML = "Hello World.";
+        };
+
+        window.onload = myfunc();
 
         
         <!--you can also use this space for internal scripts;
